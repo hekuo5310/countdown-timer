@@ -12,7 +12,8 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background: url('https://pic.vjshi.com/2020-12-23/041b44ee54c236f7c442b997e934f45c/online/337a8d9f8a569f88976605b8ea831dae.jpg?x-oss-process=style/resize_w_720') center/cover no-repeat fixed;
+      /* 背景图，可自行替换 */
+      background: url('https://t.alcy.cc/ycy') center/cover no-repeat fixed;
     }
 
     #current-time {
@@ -64,7 +65,36 @@
   <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 </head>
 <body>
-  <div id="aplayer" class="aplayer" data-order="random" data-id="2944021971" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.6"></div>
+
+  <!-- APlayer 音乐播放器配置 -->
+  <div id="aplayer" class="aplayer" 
+       data-order="random"      
+       data-id="4951688497"     
+       data-server="netease"    
+       data-type="playlist"     
+       data-fixed="true"        
+       data-autoplay="true"     
+       data-volume="0.6">       
+  </div>
+  
+  <!-- 
+    APlayer 参数说明：
+    data-order="random"           - 播放顺序：list(列表顺序) | random(随机播放)
+    data-id="4951688497"          - 歌单/歌曲ID：从网易云音乐链接中获取的数字ID 欢淫品鉴本人的猎奇歌单
+    data-server="netease"         - 音乐平台：netease(网易云) | tencent(QQ音乐) | kugou(酷狗) | xiami(虾米) | baidu(百度音乐)
+    data-type="playlist"          - 类型：song(单曲) | playlist(歌单) | album(专辑) | search(搜索关键词) | artist(歌手)
+    data-fixed="true"             - 是否吸底固定：true(固定在页面底部) | false(不固定)
+    data-autoplay="true"          - 自动播放：true(页面加载后自动播放) | false(手动点击播放)
+    data-volume="0.6"             - 默认音量：0.0-1.0 之间的小数，0.6表示60%音量
+  
+    其他可选参数：
+    data-theme="#color"           - 颜色主题：十六进制颜色代码，如 #FF6666
+    data-lrctype="0"              - 歌词类型：0(不显示) | 1(显示歌词) | 3(显示封面)
+    data-mutex="true"             - 互斥模式：true(暂停其他播放器) | false(允许多个同时播放)
+    data-listfolded="true"        - 列表折叠：true(默认折叠) | false(默认展开)
+    data-listmaxheight="300px"    - 列表最大高度：CSS高度值
+    data-preload="auto"           - 预加载：auto(自动) | metadata(元数据) | none(不预加载)
+  -->
 
   <div id="current-time"></div>
   <h2 id="title">倒计时</h2>
@@ -136,8 +166,5 @@
   <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
-  <!-- ads -->
-  <script src="https://wujiyan.cc/ads.js"></script>
 </body>
 </html>
-
