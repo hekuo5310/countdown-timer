@@ -59,7 +59,7 @@
       box-shadow: 0 0 50px rgba(0, 0, 0, 0.8); /* 阴影效果 */
     }
   </style>
-  <title>2024年新年倒计时</title>
+  <title>倒计时</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
   <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 </head>
@@ -67,7 +67,7 @@
   <div id="aplayer" class="aplayer" data-order="random" data-id="2944021971" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.6"></div>
 
   <div id="current-time"></div>
-  <h2 id="title">2024新年倒计时</h2>
+  <h2 id="title">倒计时</h2>
   <div class="snow-box">
     <div class="countdown" data-date="2024/2/10 00:00:00">
       <div class="countdown-box">
@@ -100,8 +100,8 @@
       document.getElementById('current-time').innerHTML = currentTimeString;
     }
 
-    // 目标日期时间：2024年2月10日 00:00:00
-    const targetDate = new Date('2024/2/10 00:00:00').getTime();
+    // 只要修改目标时间就可以了喵喵喵↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    const targetDate = new Date('9999/12/31 23:59:59').getTime();
 
     function updateCountdown() {
       const currentDate = new Date().getTime();
@@ -140,3 +140,4 @@
   <script src="https://wujiyan.cc/ads.js"></script>
 </body>
 </html>
+
